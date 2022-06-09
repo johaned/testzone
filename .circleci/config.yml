@@ -11,7 +11,7 @@ jobs:
 
       - restore_cache:
           keys:
-          - v1-dependencies-2.6.0-{{ checksum "kitman-integrations.gemspec" }}
+          - v1-dependencies-2.6.0-{{ checksum "testzone.gemspec" }}
           - v1-dependencies-
 
       - run:
@@ -23,7 +23,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
-          key: v1-dependencies-2.6.0-{{ checksum "kitman-integrations.gemspec" }}
+          key: v1-dependencies-2.6.0-{{ checksum "testzone.gemspec" }}
 
       - run:
           name: Run Rubocop
