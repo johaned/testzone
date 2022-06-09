@@ -1,3 +1,5 @@
+inherit_gem:
+  panolint: panolint-rubocop.yml
 Layout/LineLength:
   Enabled: false
 # https://stackoverflow.com/questions/30932732/what-is-meant-by-assignment-branch-condition-size-too-high-and-how-to-fix-it
